@@ -29,9 +29,10 @@ function checkoutBook(library, bookTitle) {
       if (shelf[i].title === bookTitle) {
         var book = shelf.splice(0, 1)[0];
         return `You have now checked out ${book.title} from the ${library.name}`;
-      }
+      } 
     }
   }
+  return `Sorry, there are currently no copies of ${bookTitle} available at the ${library.name}`
 }
 
 module.exports = {
