@@ -11,9 +11,9 @@ function buildMainCharacter(name, age, pronouns) {
   return ghoulCharacter;
 }
 
-function saveReview(reviewQuote, reviews) {
-  if (reviews[i] != reviewQuote) {
-    reviews.push(reviewQuote)
+function saveReview(newReview, reviews) {
+  if (reviews.indexOf(newReview) === -1) {
+    reviews.push(newReview)
   }
 }
 
